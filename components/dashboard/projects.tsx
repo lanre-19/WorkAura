@@ -20,7 +20,8 @@ const Projects = () => {
   const { open } = useCreateProjectModal();
   const { data, isFetching } = useGetProjects({ workspaceId });
 
-  const scrollContainerRef = useRef<any>(null);
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+
   const [isBottomFaded, setIsBottomFaded] = useState(true);
 
   const handleScroll = () => {

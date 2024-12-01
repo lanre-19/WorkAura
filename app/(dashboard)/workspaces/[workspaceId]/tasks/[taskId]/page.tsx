@@ -4,13 +4,7 @@ import { getCurrent } from "@/features/auth/queries";
 
 import TaskIdClient from "./client";
 
-interface TaskIdPageProps {
-    params: {
-        taskId: string;
-    }
-}
-
-const TaskIdPage = async ({ params }: TaskIdPageProps) => {
+const TaskIdPage = async () => {
     // Get the current user
     const currentUser = await getCurrent();
 

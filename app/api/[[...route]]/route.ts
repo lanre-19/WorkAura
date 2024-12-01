@@ -10,16 +10,17 @@ import tasks from "@/features/tasks/server/route";
 // Initialize a new Hono app
 const app = new Hono().basePath("/api");
 
-// Get the routes from the initialized app from above
-app.route("/auth", auth)
-   .route("/workspaces", workspaces)
-   .route("/members", members)
-   .route("/projects", projects)
-   .route("/tasks", tasks);
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const routes = app
+  .route("/auth", auth)
+  .route("/workspaces", workspaces)
+  .route("/members", members)
+  .route("/projects", projects)
+  .route("/tasks", tasks);
 
 export const GET = handle(app);
 export const POST = handle(app);
 export const PATCH = handle(app);
 export const DELETE = handle(app);
 
-export type AppType = ReturnType<typeof app.route>;
+export type AppType = typeof routes;

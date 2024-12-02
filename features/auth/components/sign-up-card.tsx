@@ -152,7 +152,7 @@ const SignUpCard = () => {
             <CardContent
               className="flex flex-col p-7 gap-y-4"
             >
-                <Button
+                {/* <Button
                   className="w-full rounded-lg"
                   variant="secondary"
                   size="lg"
@@ -162,7 +162,7 @@ const SignUpCard = () => {
                       className="mr-5 size-5"
                     />
                     Continue with Google
-                </Button>
+                </Button> */}
                 <Button
                   className="w-full rounded-lg"
                   variant="secondary"

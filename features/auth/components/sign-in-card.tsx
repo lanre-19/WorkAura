@@ -25,6 +25,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 
+import { signUpWithGithub } from "@/lib/oauth";
 import { loginSchema } from "../schemas";
 import { useLogin } from "../api/use-login";
 
@@ -134,7 +135,7 @@ const SignInCard = () => {
             <CardContent
               className="flex flex-col p-7 gap-y-4"
             >
-                <Button
+                {/* <Button
                   className="w-full rounded-lg"
                   variant="secondary"
                   size="lg"
@@ -144,8 +145,9 @@ const SignInCard = () => {
                       className="mr-5 size-5"
                     />
                     Continue with Google
-                </Button>
+                </Button> */}
                 <Button
+                  onClick={() => signUpWithGithub()}
                   className="w-full rounded-lg"
                   variant="secondary"
                   size="lg"

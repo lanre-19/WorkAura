@@ -12,7 +12,7 @@ const Sidebar = () => {
         <aside className="w-full h-full bg-neutral-100 p-4 flex flex-col hide-scrollbar">
             <Link
               href="/"
-              className="flex mt-0 items-center gap-x-2 sm:mt-6"
+              className="flex items-center gap-x-2 mt-0 sm:mt-6"
             >
                 <Image
                   src="/workaura-logo.svg"

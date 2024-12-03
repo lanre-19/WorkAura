@@ -9,10 +9,12 @@ import { Button } from "../ui/button";
 
 const Sidebar = () => {
     return (
-        <aside className="w-full h-full bg-neutral-100 p-4 flex flex-col hide-scrollbar">
+        <aside
+          className="w-full h-full bg-neutral-100 p-4 flex flex-col hide-scrollbar"
+        >
             <Link
               href="/"
-              className="flex items-center gap-x-2 mt-0 sm:mt-6"
+              className="mt-6 flex items-center gap-x-2 lg:mt-0 md:mt-0"
             >
                 <Image
                   src="/workaura-logo.svg"
@@ -29,21 +31,29 @@ const Sidebar = () => {
                 </Button>
             </Link>
 
-            <DottedSeparator className="my-4" />
+            <DottedSeparator
+              className="my-4"
+            />
 
             <WorkspaceSwitcher />
 
-            <DottedSeparator className="my-4" />
+            <DottedSeparator
+              className="my-4"
+            />
 
             <Navigation />
 
-            <DottedSeparator className="my-4" />
+            <DottedSeparator
+              className="my-4"
+            />
 
-            <div className="flex-grow overflow-y-auto">
+            <div
+              className="flex-grow overflow-y-auto"
+            >
               <Projects />
             </div>
         </aside>
     );
-}
+};
 
 export default Sidebar;

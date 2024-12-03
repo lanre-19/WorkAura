@@ -88,6 +88,12 @@ const CreateWorkspaceForm = ({ onCancel }: CreateWorkspaceFormProps) => {
                   className="text-2xl font-bold"
                 >
                     Create a workspace
+                    <br />
+                    <p
+                      className="text-base text-muted-foreground font-normal"
+                    >
+                      or ask a member of a workspace for a link to join one
+                    </p>
                 </CardTitle>
             </CardHeader>
             

@@ -1,6 +1,6 @@
 "use client";
 
-import { AlertTriangle } from "lucide-react";
+import { AlertTriangle, RefreshCw } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 
@@ -27,6 +27,9 @@ const ErrorPage = () => {
               size="sm"
               variant="secondary"
             >
+              <RefreshCw
+                className="w-4 h-4 mr-2"
+              />
               Refresh page
             </Button>
         </div>

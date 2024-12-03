@@ -123,38 +123,6 @@ const SignInCard = () => {
         <DottedSeparator />
       </div>
 
-      {/* <CardContent
-        className="flex flex-col p-7 gap-y-4"
-      >
-        <Button
-          className="w-full rounded-lg"
-          variant="secondary"
-          size="lg"
-          disabled={isPending}
-        >
-          <FcGoogle
-            className="mr-5 size-5"
-          />
-          Continue with Google
-        </Button>
-        <Button
-          onClick={() => signUpWithGithub()}
-          className="w-full rounded-lg"
-          variant="secondary"
-          size="lg"
-          disabled={isPending}
-        >
-          <FaGithub className="mr-5 size-5" />
-          Continue with Github
-        </Button>
-      </CardContent>
-
-      <div
-        className="px-7"
-      >
-        <DottedSeparator />
-      </div> */}
-
       <CardContent
         className="flex items-center justify-center p-7"
       >
